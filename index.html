@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thiết lập bộ mã hóa cho trang web (UTF-8) và cấu hình responsive cho các thiết bị di động -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tiêu đề của trang web sẽ xuất hiện trên tab trình duyệt -->
+    <title>Toán lớp 10 - Đề kiểm tra</title>
+    
+    <!-- Kết nối với tệp CSS để trang trí giao diện -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Thêm MathJax để hiển thị công thức toán học viết bằng LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],  // Cấu hình cú pháp MathJax cho công thức trong dòng
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],  // Cấu hình cú pháp MathJax cho công thức đứng
+                processEscapes: true,  // Cho phép sử dụng dấu gạch chéo (\\) trong công thức
+                packages: ['base', 'ams']  // Thêm các gói hỗ trợ toán học
+            },
+            options: {
+                ignoreHtmlClass: "tex2jax_ignore",  // Không xử lý MathJax đối với các phần tử có lớp này
+                processHtmlClass: "mathjax_process"  // Áp dụng MathJax cho các phần tử có lớp này
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <!-- Tiêu đề của trang web và đồng hồ đếm ngược -->
+            <h1>Toán lớp 10 - Đề kiểm tra</h1>
+            <p id="timer">Thời gian còn lại: 45:00</p>
+        </header>
+
+        <main>
+            <!-- Phần 1: Câu hỏi trắc nghiệm -->
+            <div id="mcq-container">
+                <h2>Phần 1: Multiple Choice Questions</h2>
+
+                <!-- Câu hỏi 1 -->
+                <div class="question">
+                    <h3>Câu 1</h3>
+                    <p>Tính giá trị của \( 2x + 3y \) khi \( x = 3 \) và \( y = 4 \). </p>
+                    <form>
+                        <!-- Các đáp án trắc nghiệm cho câu hỏi 1 -->
+                        <label><input type="radio" name="q1" value="a"> A. 11</label><br>
+                        <label><input type="radio" name="q1" value="b"> B. 15</label><br>
+                        <label><input type="radio" name="q1" value="c"> C. 10</label><br>
+                        <label><input type="radio" name="q1" value="d"> D. 12</label>
+                    </form>
+                </div>
+
+                <!-- Câu hỏi 2 -->
+                <div class="question">
+                    <h3>Câu 2</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q2" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q2" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q2" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q2" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+                <!-- Câu hỏi 3 -->
+                <div class="question">
+                    <h3>Câu 3</h3>
+                    <p>Tính diện tích tam giác có đáy \( b = 6 \) và chiều cao \( h = 8 \):</p>
+                    <form>
+                        <!-- Các đáp án trắc nghiệm cho câu hỏi 3 -->
+                        <label><input type="radio" name="q3" value="a"> A. 24</label><br>
+                        <label><input type="radio" name="q3" value="b"> B. 28</label><br>
+                        <label><input type="radio" name="q3" value="c"> C. 30</label><br>
+                        <label><input type="radio" name="q3" value="d"> D. 48</label>
+                    </form>
+                </div>
+
+                <div class="question">
+                    <h3>Câu 4</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q4" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q4" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q4" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q4" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+                <div class="question">
+                    <h3>Câu 5</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q5" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q5" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q5" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q5" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+                <div class="question">
+                    <h3>Câu 6</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q6" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q6" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q6" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q6" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+                <div class="question">
+                    <h3>Câu 7</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q7" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q7" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q7" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q7" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+                <div class="question">
+                    <h3>Câu 8</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q8" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q8" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q8" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q8" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+                <div class="question">
+                    <h3>Câu 9</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q9" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q9" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q9" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q9" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+
+                <div class="question">
+                    <h3>Câu 10</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q10" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q10" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q10" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q10" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+
+                <div class="question">
+                    <h3>Câu 11</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q11" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q11" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q11" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q11" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+
+
+                <div class="question">
+                    <h3>Câu 12</h3>
+                    <p>Phương trình nào sau đây là phương trình bậc nhất?</p>
+                    <form>
+                        <label><input type="radio" name="q12" value="a"> A. \( x^2 + 3x - 4 = 0 \) </label><br>
+                        <label><input type="radio" name="q12" value="b"> B. \( 2x - 5 = 0 \)</label><br>
+                        <label><input type="radio" name="q12" value="c"> C. \( 3x^2 + 2x - 1 = 0 \)</label><br>
+                        <label><input type="radio" name="q12" value="d"> D. \( x^3 - 2x + 1 = 0 \)</label>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Phần 2: Câu hỏi đúng/sai -->
+            <div id="tf-container">
+                <h2>Phần 2: True/False Questions</h2>
+
+                <!-- Câu hỏi 1 -->
+                <div class="question">
+                    <h3>Câu 1</h3>
+                    <p>Chọn đúng/sai cho các mệnh đề sau:</p>
+                    <table>
+                        <!-- Bảng chứa các mệnh đề đúng/sai -->
+                        <tr>
+                            <td>a)</td>
+                            <td>Hệ bậc phương trình đã cho là hệ bậc phương trình bậc hai ẩn</td>
+                            <td><input type="radio" name="q1a" value="true"> Đúng</td>
+                            <td><input type="radio" name="q1a" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>b)</td>
+                            <td>Điểm A(1; -1) thuộc miền nghiệm của hệ bậc phương trình đã cho</td>
+                            <td><input type="radio" name="q1b" value="true"> Đúng</td>
+                            <td><input type="radio" name="q1b" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>c)</td>
+                            <td>Miền nghiệm của hệ bậc phương trình là hình chữ nhật</td>
+                            <td><input type="radio" name="q1c" value="true"> Đúng</td>
+                            <td><input type="radio" name="q1c" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>d)</td>
+                            <td>Biểu diễn miền nghiệm của hệ trên là một đa giác có diện tích bằng 5,25</td>
+                            <td><input type="radio" name="q1d" value="true"> Đúng</td>
+                            <td><input type="radio" name="q1d" value="false"> Sai</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Câu hỏi đúng sai 2 -->
+                <div class="question">
+                    <h3>Câu 2</h3>
+                    <p>Chọn đúng/sai cho các mệnh đề sau:</p>
+                    <table>
+                        <!-- Bảng chứa các mệnh đề đúng/sai -->
+                        <tr>
+                            <td>a)</td>
+                            <td>Hệ bậc phương trình đã cho là hệ bậc phương trình bậc hai ẩn</td>
+                            <td><input type="radio" name="q2a" value="true"> Đúng</td>
+                            <td><input type="radio" name="q2a" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>b)</td>
+                            <td>Điểm A(1; -1) thuộc miền nghiệm của hệ bậc phương trình đã cho</td>
+                            <td><input type="radio" name="q2b" value="true"> Đúng</td>
+                            <td><input type="radio" name="q2b" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>c)</td>
+                            <td>Miền nghiệm của hệ bậc phương trình là hình chữ nhật</td>
+                            <td><input type="radio" name="q2c" value="true"> Đúng</td>
+                            <td><input type="radio" name="q2c" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>d)</td>
+                            <td>Biểu diễn miền nghiệm của hệ trên là một đa giác có diện tích bằng 5,25</td>
+                            <td><input type="radio" name="q2d" value="true"> Đúng</td>
+                            <td><input type="radio" name="q2d" value="false"> Sai</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--  Câu hỏi đúng sai 3 -->
+                <div class="question">
+                    <h3>Câu 3</h3>
+                    <p>Chọn đúng/sai cho các mệnh đề sau:</p>
+                    <table>
+                        <!-- Bảng chứa các mệnh đề đúng/sai -->
+                        <tr>
+                            <td>a)</td>
+                            <td>Hệ bậc phương trình đã cho là hệ bậc phương trình bậc hai ẩn</td>
+                            <td><input type="radio" name="q3a" value="true"> Đúng</td>
+                            <td><input type="radio" name="q3a" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>b)</td>
+                            <td>Điểm A(1; -1) thuộc miền nghiệm của hệ bậc phương trình đã cho</td>
+                            <td><input type="radio" name="q3b" value="true"> Đúng</td>
+                            <td><input type="radio" name="q3b" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>c)</td>
+                            <td>Miền nghiệm của hệ bậc phương trình là hình chữ nhật</td>
+                            <td><input type="radio" name="q3c" value="true"> Đúng</td>
+                            <td><input type="radio" name="q3c" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>d)</td>
+                            <td>Biểu diễn miền nghiệm của hệ trên là một đa giác có diện tích bằng 5,25</td>
+                            <td><input type="radio" name="q3d" value="true"> Đúng</td>
+                            <td><input type="radio" name="q3d" value="false"> Sai</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--  Câu hỏi đúng sai 4 -->
+                <div class="question">
+                    <h3>Câu 4</h3>
+                    <p>Chọn đúng/sai cho các mệnh đề sau:</p>
+                    <table>
+                        <!-- Bảng chứa các mệnh đề đúng/sai -->
+                        <tr>
+                            <td>a)</td>
+                            <td>Hệ bậc phương trình đã cho là hệ bậc phương trình bậc hai ẩn</td>
+                            <td><input type="radio" name="q4a" value="true"> Đúng</td>
+                            <td><input type="radio" name="q4a" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>b)</td>
+                            <td>Điểm A(1; -1) thuộc miền nghiệm của hệ bậc phương trình đã cho</td>
+                            <td><input type="radio" name="q4b" value="true"> Đúng</td>
+                            <td><input type="radio" name="q4b" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>c)</td>
+                            <td>Miền nghiệm của hệ bậc phương trình là hình chữ nhật</td>
+                            <td><input type="radio" name="q4c" value="true"> Đúng</td>
+                            <td><input type="radio" name="q4c" value="false"> Sai</td>
+                        </tr>
+                        <tr>
+                            <td>d)</td>
+                            <td>Biểu diễn miền nghiệm của hệ trên là một đa giác có diện tích bằng 5,25</td>
+                            <td><input type="radio" name="q4d" value="true"> Đúng</td>
+                            <td><input type="radio" name="q4d" value="false"> Sai</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+            </div>
+
+            
+
+            <!-- Phần 3: Câu hỏi điền câu trả lời -->
+            <div id="short-answer-container">
+                <h2>Phần 3: Short Answer Questions</h2>
+                <h3>Lưu ý: Hãy điền đáp án thỏa mãn không có ký tự " " (khoảng trống). Với các số thập phân xài ","</h3>
+            
+                <!-- Trả lời ngắn 1-->
+                <div class="question">
+                    <h3>Câu 1</h3>
+                    <p>Tính tổng của các số nguyên từ 1 đến 100:</p>
+                    <form>
+                        <input type="text" name="q13" placeholder="Nhập câu trả lời của bạn">
+                    </form>
+                </div>
+            
+                <!-- Trả lời ngắn 2 -->
+                <div class="question">
+                    <h3>Câu 2</h3>
+                    <p>Cho tam giác vuông ABC với góc vuông tại B, nếu \( AB = 3 \) và \( AC = 5 \), tính độ dài cạnh \( BC \):</p>
+                    <form>
+                        <input type="text" name="q14" placeholder="Nhập câu trả lời của bạn">
+                    </form>
+                </div>
+            
+                <!-- Trả lời ngắn 3 -->
+                <div class="question">
+                    <h3>Câu 3</h3>
+                    <p>Viết phương trình đường thẳng qua điểm \( A(1, 2) \) và có độ dốc \( m = 4 \):</p>
+                    <form>
+                        <input type="text" name="q15" placeholder="Nhập câu trả lời của bạn">
+                    </form>
+                </div>
+
+                <!-- Trả lời ngắn 4-->
+                <div class="question">
+                    <h3>Câu 4</h3>
+                    <p>Tính tổng của các số nguyên từ 1 đến 100:</p>
+                    <form>
+                        <input type="text" name="q16" placeholder="Nhập câu trả lời của bạn">
+                    </form>
+                </div>
+
+                <!-- Trả lời ngắn 5-->
+                <div class="question">
+                    <h3>Câu 5</h3>
+                    <p>Tính tổng của các số nguyên từ 1 đến 100:</p>
+                    <form>
+                        <input type="text" name="q17" placeholder="Nhập câu trả lời của bạn">
+                    </form>
+                </div>
+
+
+                <!-- Trả lời ngắn 6-->
+                <div class="question">
+                    <h3>Câu 6</h3>
+                    <p>Tính tổng của các số nguyên từ 1 đến 100:</p>
+                    <form>
+                        <input type="text" name="q18" placeholder="Nhập câu trả lời của bạn">
+                    </form>
+                </div>
+
+            </div>
+            
+            <!-- Nút gửi bài -->
+            <button id="submit-btn">Nộp bài</button>
+            
+            <!-- Hiển thị điểm sau khi tính -->
+            <div id="scoreResult"></div>
+        </main>
+
+        <footer>
+            <!-- Thông tin tác giả và thiết kế -->
+            <p>&copy; Giáo viên: Hoàng Ngọc Lâm. Thiết kế web: <a href="https://www.facebook.com/MinhHuyTheDev/">Minh Huy</a></p>
+        </footer>
+    </div>
+
+    <!-- Kết nối với tệp JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

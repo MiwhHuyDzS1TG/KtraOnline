@@ -1,0 +1,17 @@
+    // Xóa dữ liệu localStorage khi tải lại trang (chỉ phục vụ cho quá trình thử nghiệm)
+    window.addEventListener("beforeunload", () => {
+        localStorage.removeItem("timeLeft");
+
+
+-Điểm chi tiết: Sau khi nộp bài, hiển thị điểm chi tiết từng phần để học sinh biết cần cải thiện ở đâu.
+-Phần Short Answer:
+
+Câu trả lời dạng tự luận thường có thể bị lỗi do định dạng hoặc khác nhau về cách viết. Ví dụ, câu "y = 4x - 2" và "4x - y = 2" là tương đương nhưng có thể bị đánh giá sai. Có thể cải thiện bằng cách:
+
+-Tính năng bổ sung:
+
+-Lưu tạm bài làm: Nếu trang bị đóng hoặc mất kết nối, bài làm nên được lưu lại để học sinh không mất dữ liệu.
+-Hiển thị lời giải: Sau khi nộp bài, cung cấp lời giải chi tiết từng câu giúp học sinh hiểu rõ hơn.
+
+
+

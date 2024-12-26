@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #007BFF;
+}
+
+#timer {
+    font-size: 1.2em;
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+input[type="radio"]:hover, input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px #007BFF;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#submit-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for Short Answer Questions */
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+/* Styles for True/False Questions */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+table td:first-child {
+    text-align: center;
+    width: 30px;
+}
+
+table td:nth-child(2) {
+    width: 60%;
+}
+
+table td input[type="radio"] {
+    margin-right: 10px;
+    width: 18px; /* Tăng kích thước radio button */
+    height: 18px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+table td:nth-child(2) {
+    font-size: 1em;
+}
+
+/* Additional styles for better readability */
+.question p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.question {
+    margin-bottom: 30px;
+}

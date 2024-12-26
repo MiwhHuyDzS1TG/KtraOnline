@@ -1,0 +1,45 @@
+{
+    "multipleChoice": {
+        "q1": "b",
+        "q2": "b",
+        "q3": "a",
+        "q4": "c",
+        "q5": "d",
+        "q6": "a",
+        "q7": "b",
+        "q8": "c",
+        "q9": "a",
+        "q10": "d",
+        "q11": "b",
+        "q12": "c"
+    },
+    "trueFalse": {
+        "q1a": "true",
+        "q1b": "false",
+        "q1c": "true",
+        "q1d": "false",
+
+        "q2a": "false",
+        "q2b": "true",
+        "q2c": "false",
+        "q2d": "true",
+
+        "q3a": "true",
+        "q3b": "false",
+        "q3c": "true",
+        "q3d": "false",
+        
+        "q4a": "false",
+        "q4b": "true",
+        "q4c": "true",
+        "q4d": "false"
+    },
+    "shortAnswer": {
+        "q13": "5050",
+        "q14": "4",
+        "q15": "2,5",
+        "q16": "0",
+        "q17": "1",
+        "q18": "2"
+    }
+}
